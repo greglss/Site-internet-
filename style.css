@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.noselect{
+	user-select: none;
+}
+
+body{
+	background-color:#000000;
+}
+
+.fond{
+  position: absolute;
+  z-index: -1;
+  height: fit-content;
+  width: 100%
+}
+  
+section{
+  z-index: 0;
+	margin: auto;
+	width: clamp(80%, 4em, 60%) !important;
+  margin-bottom: 6rem;
+	color: white;
+}
+
+
+
+/* section accueil*/
+
+#accueil{
+  padding: 7em 0 0;
+  z-index: 0;
+}
+
+#name-title{
+	letter-spacing: 2px;
+  font-size: clamp(4rem, 3rem + 2vw, 6rem);
+  color: #eaeaea;
+}
+
+#name-role{
+  margin-top: 50px;
+	letter-spacing: 4px;
+  color: #e0e5e9;
+	font-size: clamp(1.8rem, 1.7rem + 1.5vw, 3rem);
+  transition: 0.2s all ease-out;
+}
+
+#name-role:hover{
+	transition: 0.2s ease-in;
+	font-size: 3.2rem;
+  color: #fe515df7;
+}
+
+
+.desc{
+  color: #e0e5e9;
+	font-size: 1.4rem;
+  margin-top: 50px;
+	width: auto;
+}
+
+.bouton{
+  cursor: pointer;
+  display: block;
+  text-decoration: none;
+  background-color:white;
+  color: black;
+  width: fit-content;
+  margin-top: 50px;
+  font-weight: bold;
+  padding: 0.75rem 2.5rem;
+  border-radius: 20px;
+  font-size: 1.2em;
+}
+
+/* section projets*/
+
+hr{
+  width: 50vw;
+  height: 2px;
+  background-color:#e0e5e9;
+  border: none;
+}
+.card-projet{
+  width: 100%;
+  height: 150px;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  border-bottom: #e0e5e9 2px solid;
+  transition: 0.2s all ease-out;
+}
+
+.card-projet:hover{
+  border-bottom: 2px solid  #fe515df7;;
+  transition: 0.2s all ease;
+}
+
+.card-projet a{
+  letter-spacing: 2px;
+  font-size: 3.8em;
+  text-decoration: none;
+  color: #e0e5e9;
+  transition: 0.2s all ease-out;
+}
+
+.card-projet a:hover{
+  font-size: 5.2em;
+  transition: 0.2s all ease;
+  color: #fe515df7;
+}
+
+/* section contact */
+
+.contactme{
+  display: flex;
+  gap: 150px;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.box{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  height: 200px;
+  width: 300px;
+  border: #e0e5e9 2px solid;
+  border-radius: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.box h3{
+  color: #fff;
+}
+
+.imglogo{
+  width: 50px;
+}
+
+@media (max-width: 760px) {
+  .fond{
+    height: 400vw;
+    width: 100%;
+  }
+  .contactme{
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+}
